@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jQuery-1</title>
 </head>
 <body>
-    
+    <h2>This heading going to hide!</h2>
+    <p>
+        Click below button!
+    </p>
+    <button class="hide">Hide!</button>
+    <button class="show">Show!</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".hide").click(function(){
+                $("h2").hide()
+            })
+            $(".show").click(function(){
+                $("h2").show()
+            })
+        })
+    </script>
 </body>
 </html>
