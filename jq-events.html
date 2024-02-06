@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery-1</title>
+    <title>jQuery Events</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
@@ -12,27 +12,22 @@
         Click below button!
     </p>
     <button class="hide">Hide!</button>
+    <button class="double">Double click me !</button>
     <button class="show">Show!</button>
 
-    
     <script>
-        // $(document).ready(function(){
-        //     $(".hide").click(function(){
-        //         $("h2").hide()
-        //     })
-        //     $(".show").click(function(){
-        //         $("h2").show()
-        //     })
-        // })
-
-        //$(document).ready() Minimalised version ->
-
         $(function(){
+            //Hide function
             $(".hide").click(function(){
                 $("h2").hide()
             })
+            //Show function
             $(".show").click(function(){
                 $("h2").show()
+            })
+            //Double Click event
+            $(".double").dblclick(function(){
+                $("h2").hide()
             })
         })
     </script>
